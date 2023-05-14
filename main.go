@@ -36,11 +36,11 @@ func call(message string) error {
 			Model: gpt.GPT35Turbo,
 			Messages: []gpt.Message{
 				{
-					Role:    "system",
+					Role:    gpt.RoleSystem,
 					Content: "You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible.",
 				},
 				{
-					Role:    "user",
+					Role:    gpt.RoleUser,
 					Content: message,
 				},
 			},
